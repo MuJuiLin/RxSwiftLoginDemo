@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+use_frameworks!
+def main_sources
+pod 'RxSwift',     '~> 4.0'
+pod 'RxCocoa',     '~> 4.0'
+end
+
+target 'RxSwiftLoginDemo' do
+main_sources
+
+  target 'RxSwiftLoginDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RxTest',     '~> 4.0'
+  end
+
+end

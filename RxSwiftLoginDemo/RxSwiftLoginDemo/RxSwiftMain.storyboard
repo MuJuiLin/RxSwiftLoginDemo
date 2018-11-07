@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NJx-vN-XQj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rx Swift Login View Controller-->
+        <scene sceneID="l4M-CY-XlX">
+            <objects>
+                <viewController storyboardIdentifier="RxSwiftLoginViewController" id="NJx-vN-XQj" customClass="RxSwiftLoginViewController" customModule="RxSwiftLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="53s-da-Hfo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iP1-Ek-Mw2">
+                                <rect key="frame" x="24" y="140" width="327" height="149"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="guest@guest.com" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7an-hR-d3A">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email format is incorrect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjV-AS-3sp">
+                                        <rect key="frame" x="71" y="46" width="185.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.88235294119999996" green="0.1450980392" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="guest1234" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQy-3P-v3I">
+                                        <rect key="frame" x="0.0" y="82.5" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password length is too short" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC3-IQ-mpr">
+                                        <rect key="frame" x="55" y="128.5" width="217" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.88235294119999996" green="0.1450980392" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7an-hR-d3A" firstAttribute="leading" secondItem="iP1-Ek-Mw2" secondAttribute="leading" id="HB3-TW-lII"/>
+                                    <constraint firstItem="QQy-3P-v3I" firstAttribute="leading" secondItem="iP1-Ek-Mw2" secondAttribute="leading" id="IdJ-eS-KNu"/>
+                                    <constraint firstAttribute="trailing" secondItem="QQy-3P-v3I" secondAttribute="trailing" id="WRQ-el-2pU"/>
+                                    <constraint firstAttribute="trailing" secondItem="7an-hR-d3A" secondAttribute="trailing" id="inj-Ly-X2F"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edi-Ac-waf">
+                                <rect key="frame" x="168.5" y="369" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled" title="Login">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iP1-Ek-Mw2" firstAttribute="leading" secondItem="AXw-hY-q27" secondAttribute="leading" constant="24" id="2FA-le-h8Y"/>
+                            <constraint firstItem="edi-Ac-waf" firstAttribute="top" secondItem="iP1-Ek-Mw2" secondAttribute="bottom" constant="80" id="NPo-mM-JOW"/>
+                            <constraint firstItem="edi-Ac-waf" firstAttribute="centerX" secondItem="53s-da-Hfo" secondAttribute="centerX" id="OyI-a9-uPl"/>
+                            <constraint firstItem="AXw-hY-q27" firstAttribute="trailing" secondItem="iP1-Ek-Mw2" secondAttribute="trailing" constant="24" id="Wqo-UW-6IF"/>
+                            <constraint firstItem="iP1-Ek-Mw2" firstAttribute="top" secondItem="AXw-hY-q27" secondAttribute="top" constant="120" id="nck-RF-vwB"/>
+                            <constraint firstItem="iP1-Ek-Mw2" firstAttribute="centerX" secondItem="53s-da-Hfo" secondAttribute="centerX" id="txA-lQ-7Pn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AXw-hY-q27"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="edi-Ac-waf" id="3dr-o5-u7f"/>
+                        <outlet property="llEmailError" destination="CjV-AS-3sp" id="dQR-z1-C1S"/>
+                        <outlet property="llPasswordError" destination="HC3-IQ-mpr" id="bRC-qf-RfN"/>
+                        <outlet property="tfEmail" destination="7an-hR-d3A" id="xxn-iU-UU6"/>
+                        <outlet property="tfPassword" destination="QQy-3P-v3I" id="dgM-mW-HJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1B-n0-kKx" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
